@@ -1,0 +1,22 @@
+.section{
+  min-height: 100vh;
+  padding: 40px 6% 2rem;
+}
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+  width: 70%;
+  box-shadow: 0 6px 10px 0 rgba(251, 4, 119, 0.6), 0 6px 10px 0 rgba(251, 4, 119, 0.6);
+  border-radius: 40%;
+  margin-top: 50%;
+  margin-left: 70%;
+  transform: translate(-50%,-50%);
+  filter:grayscale(100%);
+  transition: 1.5% ease-in-out;
+}
+img:hover{
+  filter: grayscale(0%);
+}
