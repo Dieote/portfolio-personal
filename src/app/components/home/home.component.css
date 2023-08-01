@@ -1,11 +1,25 @@
 .section{
   min-height: 100vh;
-  padding: 40px 6% 2rem;
+  padding: 20px 6% 2rem;
 }
 .home{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.home-content h3{
+  font-size: 2.0rem;
+  font-weight: 700;
+}
+
+.home-content h1 {
+  font-size: 3.4rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-top: 15%;
+}
+.home-content p {
+  font-size: 1.4rem;
 }
 img{
   width: 70%;
@@ -20,3 +34,42 @@ img{
 img:hover{
   filter: grayscale(0%);
 }
+.social-media a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background: transparent;
+  border: .2rem solid var(--main-color);
+  border-radius: 50%;
+  font-size: 2rem;
+  color: var(--main-color);
+  margin: 8rem 1.5rem 3rem;
+}
+.social-media a:hover{
+  background: var(--main-color);
+  color: var(--second-bg-color);
+  box-shadow: 0 0 1 var(--main-color);
+}
+/* maquina escribir */
+  span {
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 26ch;
+    color: var(--main-color);
+
+    animation: typing 2s steps(26), blink .5s infinite step-end alternate;
+    overflow:hidden;
+    }
+
+    @keyFrames typing {
+
+    from { width: 0}
+    }
+
+    @keyFrames blink {
+     50% { border-color: transparent}
+    }
