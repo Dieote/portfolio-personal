@@ -21,7 +21,7 @@
 .home-content p {
   font-size: 1.4rem;
 }
-img{
+#imag{
   width: 75%;
   box-shadow: 0 6px 10px 0 rgba(251, 4, 119, 0.6), 0 6px 10px 0 rgba(251, 4, 119, 0.6);
   border-radius: 40%;
@@ -31,7 +31,7 @@ img{
   filter:grayscale(100%);
   transition: 1.5% ease-in-out;
 }
-img:hover{
+#imag:hover{
   filter: grayscale(0%);
 }
 .social-media a {
