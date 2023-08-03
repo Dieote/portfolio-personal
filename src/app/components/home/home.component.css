@@ -1,9 +1,9 @@
 .section{
-  min-height: 100vh;
-  padding: 20px 6% 2rem;
+  min-height: auto;
+  padding: 50px 8% 1rem;
 }
 .home{
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
 }
@@ -26,7 +26,7 @@
   box-shadow: 0 6px 10px 0 rgba(251, 4, 119, 0.6), 0 6px 10px 0 rgba(251, 4, 119, 0.6);
   border-radius: 40%;
   margin-top: 60%;
-  margin-left: 60%;
+  margin-left: 70%;
   transform: translate(-50%,-50%);
   filter:grayscale(100%);
   transition: 1.5% ease-in-out;
