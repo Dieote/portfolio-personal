@@ -11,7 +11,6 @@
   font-weight: 700;
 }
 .heading{
-  margin-top: 5%;
     text-align: center;
     line-height: 0.8;
     font-size: 2.5rem;
@@ -24,7 +23,7 @@
   gap: 3rem;
 }
 .services-container .services-box{
-  flex: 1 1 30rem;
+  flex: .5 1 15rem;
   background: var(--second-bg-color);
   padding: 3rem 2rem 4rem;
   border-radius: 2rem;
