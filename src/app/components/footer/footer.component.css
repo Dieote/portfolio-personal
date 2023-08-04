@@ -1,0 +1,13 @@
+.footer{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  background: linear-gradient(to right, #1f242d, #fb0477, #1f242d);
+    /* background: linear-gradient(to right, #ffffff, #bbe5f5, #ffff); */
+}
+.footer-text{
+  font-size: 1rem;
+  margin-left: 33%;
+}

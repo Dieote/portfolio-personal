@@ -85,6 +85,7 @@
       overflow: hidden;
       transition: 0.2s;
       margin-left: 23%;
+      margin-bottom: 10%;
   }
   .btn-neon:hover{
       background: #a945c7;
