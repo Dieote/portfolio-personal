@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: .3rem 1%;
+  padding: .3rem 2%;
   background: var(--bg-color);
   display: flex;
   justify-content: space-between;
@@ -41,3 +41,4 @@
 .menu-icon i {
   display: block;
 }
+
