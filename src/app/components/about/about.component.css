@@ -1,5 +1,7 @@
 .section{
   display: block;
+  padding: 0;
+  margin-top: 0;
 }
 .about{
   display: flex;
