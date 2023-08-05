@@ -25,7 +25,7 @@
 .services-container .services-box{
   flex: .5 1 15rem;
   background: var(--second-bg-color);
-  padding: 3rem 2rem 4rem;
+  padding: 2rem 2rem 1rem;
   border-radius: 2rem;
   text-align: center;
   border: 2rem solid var(-bg-color);
@@ -42,4 +42,125 @@ transform: scale(1.02);
 .services-box p {
   font-size: 1.6rem;
   color: var(-bg-color);
+}
+#description{
+  text-align: center;
+  color: var(--text-color);
+  margin-bottom: 0;
+  margin-top: 1.5rem;
+  opacity: 40%;
+  font-size: 1.4rem;
+}
+/*Estilos Modal*/
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.modal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5%;
+}
+.img-box {
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-box img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  transition: .5s ease;
+}
+.img-box:hover img {
+  transform: scale(1.2);
+}
+.close-btn{
+  position: fixed;
+    top: 70px;
+    right: 320px;
+    z-index: 1;
+    background-color: transparent;
+    color: var(--main-color);
+    font-size: 1.5rem;
+    border: none;
+}
+
+/*Grilla Resto*/
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.grid-item {
+  background-color: var(--second-bg-color);
+  padding: 10px;
+  text-align: center;
+  border-radius: 25px 5px;
+
+}
+.grid-item h4{
+  font-size: 2.0rem;
+  font-weight: 700;
+  text-align: center;
+}
+.grid-item p{
+  font-size: 1.0rem;
+  font-weight: 40;
+}
+ul{
+padding-left: 20px;
+}
+.grid-item li {
+  font-size: 1.0rem;
+  text-align: left;
+  list-style: none;
+  margin-bottom: .5rem;
+}
+.grid-item i {
+  text-align: left;
+  margin-right: 10px;
+  margin-top: 5px;
+  color: var(--main-color);
+}
+#links-work {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: -30px;
+  margin-top: 10px;
+}
+
+.instagram-icon{
+  font-size: 1.5rem;
+  transition: .3s ease;
+}
+.instagram-icon:hover{
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+.external-icon{
+  font-size: 1.3rem;
+  transition: .3s ease;
+}
+.external-icon:hover{
+    box-shadow: 0 0 1rem var(--main-color);
+}
+.star-icon{
+  font-size: 1.5rem;
+  transition: .3s ease;
+}
+.star-icon:hover{
+    box-shadow: 0 0 1rem var(--main-color);
 }

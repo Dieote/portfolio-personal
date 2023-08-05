@@ -9,7 +9,20 @@
         Empresariales, con experiencia en bases de datos y diseño de vistas
         responsivas para navegadores.
       </p>
-      <a href="#" class="btn">Certificados</a>
+      <a class="btn" (click)="openModalWebDev()">Certificado</a>
+      <p id="description">
+        Java, Java EE, Hibernate y Spring Boot| SQL | Angular, Bootstrap
+      </p>
+    </div>
+    <div class="overlay" (click)="closeModalWebDev()" *ngIf="showModalWebDev">
+      <div class="modal-container">
+        <div class="img-box">
+          <button class="btn close-btn" (click)="showModalWebDev = false">
+            &times;
+          </button>
+          <img [src]="'/assets/CertificadoGM.jpg'" />
+        </div>
+      </div>
     </div>
 
     <div class="services-box">
@@ -20,7 +33,21 @@
         manuales y automatización de pruebas. Tengo conocimientos en pruebas
         ágiles en diversos marcos de trabajo.
       </p>
-      <a href="#" class="btn">Certificado</a>
+      <a class="btn" (click)="openModalQA()">Certificado</a>
+      <p id="description">
+        Pruebas manuales y automáticas | Reportes de bugs, casos de prueba en
+        projectos agiles
+      </p>
+    </div>
+    <div class="overlay" (click)="closeModalQA()" *ngIf="showModalQA">
+      <div class="modal-container">
+        <div class="img-box">
+          <button class="btn close-btn" (click)="showModalQA = false">
+            &times;
+          </button>
+          <img [src]="'/assets/CertificadoTesting.jpg'" />
+        </div>
+      </div>
     </div>
 
     <div class="services-box">
@@ -31,7 +58,105 @@
         personalizada, habilidades como encargado de salón y bodega,junto con
         servicios de sommelier.
       </p>
-      <a href="#" class="btn">Lista de Restaurantes?</a>
+      <a class="btn" (click)="openModalRestaurant()">Restaurantes</a>
+      <p id="description">
+        Atención al cliente | Encargado | Sommelier | Manejo de personal
+      </p>
+    </div>
+    <div
+      class="overlay"
+      (click)="closeModalRestaurant()"
+      *ngIf="showModalRestaurant"
+    >
+      <div class="modal-container">
+        <div class="img-box">
+          <button class="btn close-btn" (click)="showModalRestaurant = false">
+            &times;
+          </button>
+          <div class="grid-container">
+            <div class="grid-item">
+              <h4>Argentina</h4>
+              <ul>
+                <li>
+                  <i class="fa fa-cutlery" aria-hidden="true"></i> Restaurante
+                  Club de Campo - Mendoza | 2019 - 2021.
+                  <ul>
+                    <li id="links-work">
+                      <a
+                        href="https://www.instagram.com/clubdecampo.restaurante/?hl=es"
+                        target="_blank"
+                      >
+                        <i class="fab fa-instagram instagram-icon"></i>
+                      </a>
+                      <a
+                        href="https://clubdecamporestaurante.com/"
+                        target="_blank"
+                      >
+                        <i
+                          class="fa fa-external-link external-icon"
+                          aria-hidden="true"
+                        ></i>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <i class="fa fa-cutlery" aria-hidden="true"></i> Restaurante
+                  Anastasio - Mendoza | 2018 - 2019.
+                </li>
+              </ul>
+            </div>
+            <div class="grid-item">
+              <h4>España</h4>
+              <ul>
+                <li>
+                  <i class="fa fa-cutlery" aria-hidden="true"></i>Restaurante La
+                  Ermitaña - Toledo | junio 2023
+                  <ul>
+                    <li id="links-work">
+                      <a
+                        href="https://www.instagram.com/laermitana.es/?hl=es"
+                        target="_blank"
+                      >
+                        <i class="fab fa-instagram instagram-icon"></i>
+                      </a>
+                      <a href="https://laermitana.es/" target="_blank">
+                        <i
+                          class="fa fa-external-link external-icon"
+                          aria-hidden="true"
+                        ></i>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <i class="fa fa-cutlery" aria-hidden="true"></i>Restaurante La
+                  Orza - Toledo | Julio 2022 / Febrero 2023.
+                  <ul>
+                    <li id="links-work">
+                      <a
+                        href="https://guide.michelin.com/es/es/castilla-la-mancha/es-toledo/restaurante/la-orza"
+                        target="_blank"
+                      >
+                        <i class="fa fa-star star-icon" aria-hidden="true"></i>
+                      </a>
+                      <a
+                        target="_blank"
+                        href="https://www.restaurantelaorza.com/"
+                      >
+                        <i
+                          class="fa fa-external-link external-icon"
+                          aria-hidden="true"
+                        ></i>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="services-box">
