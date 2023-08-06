@@ -4,15 +4,17 @@
 .portfolio h2{
   margin-bottom: 4rem;
   margin-top: 5rem;
+  text-shadow: 2px 2px 2px black;
 }
 .portfolio-container{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   align-items: center;
-  gap: 3.5rem;
+  gap: 3.2rem;
   margin: 3rem;
 }
 .portfolio-container .portfolio-box{
+  width: 30rem;
   background-color: var(--second-bg-color);
   position: sticky;
   border-radius: 2rem;

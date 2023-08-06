@@ -1,7 +1,11 @@
 <div class="header">
   <a routerLink="/home" class="logo">Portafolio</a>
 
-  <div class="menu-icon">
+  <div
+    class="menu-icon"
+    (click)="openIconActive()"
+    [class.active]="menuIconActive"
+  >
     <i class="fas fa-bars"></i>
   </div>
 

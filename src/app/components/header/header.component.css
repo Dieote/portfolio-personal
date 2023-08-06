@@ -37,8 +37,24 @@
   cursor: pointer;
   display: none;
 }
-
+.menu-icon a {
+  visibility: hidden;
+}
+.menu-icon.active a {
+  visibility: visible;
+}
 .menu-icon i {
   display: block;
 }
-
+@media(max-width: 768px){
+  .menu-icon{
+    display: block;
+  }
+  .navbar{
+    display: none;
+  }
+  .menu-icon.active .navbar{
+    display: flex;
+    flex-direction: column;
+  }
+}
