@@ -11,6 +11,8 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 
+import { LayoutModule } from '@angular/cdk/layout';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,13 +22,10 @@ import { FooterComponent } from './components/footer/footer.component';
     ServicesComponent,
     PortfolioComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, LayoutModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
