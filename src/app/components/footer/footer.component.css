@@ -11,3 +11,10 @@
   font-size: 1rem;
   margin-left: 33%;
 }
+/*Responsive*/
+
+@media(max-width: 768px){
+  .footer{
+    margin-right: 30%;
+  }
+}

@@ -147,22 +147,28 @@
   .home{
     flex-direction: column;
   }
-  .home-content{
-    margin-left: 5rem;
-  }
+
   .home-content h3{
     font-size: 2.8rem;
+      margin-left: 5rem;
   }
   .home-content p{
     font-size: 2.6rem;
+    margin-left: 5rem;
   }
 
   .home-content h1 {
     font-size: 5rem;
+    margin-left: 5rem;
+  }
+  .social-media{
+    margin-left: 5rem;
   }
   .home-img #imag{
     width: 70vw;
     margin-top: 3rem;
+    margin-left: -20rem;
+
   }
 
   }

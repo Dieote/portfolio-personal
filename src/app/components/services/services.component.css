@@ -1,17 +1,10 @@
-.section{
-  min-height: auto;
-  padding: 50px 8% 1rem;
-  display: block;
-}
-.services h2{
-  margin-bottom: 5rem;
-}
 .services-box h3{
   font-size: 2.0rem;
   font-weight: 700;
 }
 .heading{
     text-align: center;
+    margin-top: 10%;
     line-height: 0.8;
     font-size: 2.5rem;
     text-shadow: 2px 2px 2px black;
@@ -171,4 +164,23 @@ padding-left: 20px;
 }
 .star-icon:hover{
     box-shadow: 0 0 1rem var(--main-color);
+}
+/*Responsive*/
+@media(max-width: 768px){
+  .services-container{
+    margin-top: 3rem;
+  }
+  .heading {
+    margin-top: 10rem;
+  }
+}
+@media (max-width: 991px){
+  .services-container{
+    margin-top: 3rem;
+    margin-left: 15rem;
+    width: 100%;
+  }
+  .heading {
+    margin-top: 10rem;
+  }
 }

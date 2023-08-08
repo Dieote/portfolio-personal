@@ -40,3 +40,22 @@
   margin-bottom: 4rem;
   cursor: pointer;
 }
+/*Responsive*/
+@media(max-width: 768px){
+  .heading{
+    text-align: left;
+    margin-left: 8rem;
+    font-size: 4rem;
+  }
+  .contact form{
+    text-align: left;
+  }
+  .btn{
+    margin: 30rem;
+  }
+}
+@media (max-width: 991px){
+  .contact form{
+    text-align: left;
+  }
+}
