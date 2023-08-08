@@ -62,3 +62,12 @@ margin-bottom: .5rem;
 transform: scale(1.02);
 color: var(--main-color);
 }
+/*Responsive*/
+@media(max-width: 768px){
+  .about{
+flex-direction: column-reverse;  }
+}
+.about-img{
+  width: 70vw;
+  margin-top: 4rem;
+}

@@ -11,4 +11,24 @@ export class HeaderComponent {
   openIconActive() {
     this.menuIconActive = !this.menuIconActive;
   }
+  closeMenu() {
+    this.menuIconActive = false;
+  }
+
+  constructor() {}
+
+  ngOnInit() {
+    window.addEventListener('scroll', this.onScroll);
+  }
+
+  ngOnDestroy() {
+    window.removeEventListener('scroll', this.onScroll);
+  }
+
+  onScroll() {
+    const header = document.querySelector('header');
+    if (header) {
+      header.classList.toggle('sticky', window.scrollY > 100);
+    }
+  }
 }
