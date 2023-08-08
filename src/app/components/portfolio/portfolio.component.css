@@ -1,6 +1,3 @@
-.portfolio{
-  background-color: var();
-}
 span{
   color: var(--main-color);
 }
@@ -106,5 +103,15 @@ img{
 }
 #goLink:hover{
   transform: scale(.3);
-
+}
+/*responsive*/
+@media(max-width: 768px){
+  .portfolio-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(580px, 2fr));
+    align-items: stretch;
+    gap: 3.2rem;
+    width: 35vw;
+    margin: 3rem;
+  }
 }

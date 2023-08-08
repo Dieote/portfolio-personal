@@ -10,12 +10,12 @@
   </div>
 
   <div>
-    <nav class="navbar">
-      <a routerLink="/home">Home</a>
-      <a routerLink="/about">Sobre mi</a>
-      <a routerLink="/services">Servicios</a>
-      <a routerLink="/portfolio">Portafolio</a>
-      <a routerLink="/contact">Contacto</a>
+    <nav class="navbar" [class.active]="menuIconActive">
+      <a routerLink="/home" (click)="closeMenu()">Home</a>
+      <a routerLink="/about" (click)="closeMenu()">Sobre mi</a>
+      <a routerLink="/services" (click)="closeMenu()">Servicios</a>
+      <a routerLink="/portfolio" (click)="closeMenu()">Portafolio</a>
+      <a routerLink="/contact" (click)="closeMenu()">Contacto</a>
     </nav>
   </div>
 </div>
