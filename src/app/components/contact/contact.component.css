@@ -13,7 +13,6 @@
 .contact form{
   max-width: 70rem;
   margin: 1rem 7rem;
-  text-align: center;
 }
 .contact form .input-box{
   justify-content: space-between;
@@ -38,6 +37,7 @@
 .contact form .btn{
   margin-top: 2rem;
   margin-bottom: 4rem;
+  margin-left: 51%;
   cursor: pointer;
 }
 /*Responsive*/

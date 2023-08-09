@@ -39,7 +39,7 @@ section{
 /* RESPONSIVE*/
 @media (max-width: 1200px){
   html{
-    font-size: 55%;
+    font-size: 65%;
   }
 }
 @media (max-width: 991px){
