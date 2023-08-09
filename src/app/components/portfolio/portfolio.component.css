@@ -105,6 +105,21 @@ img{
   transform: scale(.3);
 }
 /*responsive*/
+
+@media (max-width: 1024px){
+.portfolio{
+  display: grid;
+}
+.portfolio-container{
+  width: 58vw;
+  margin-left: 10rem;
+  }
+}
+@media (max-width: 991px){
+  section{
+    padding: 2rem 5% 0rem;
+  }
+}
 @media(max-width: 768px){
   .portfolio-container{
     display: grid;
@@ -114,4 +129,12 @@ img{
     width: 35vw;
     margin: 3rem;
   }
+  .heading{
+    padding-top: 3rem;
+  }
+}
+@media (max-width: 425px){
+ .portfolio{
+  margin-left: 15%;
+ }
 }

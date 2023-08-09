@@ -42,16 +42,22 @@ section{
     font-size: 65%;
   }
 }
-@media (max-width: 991px){
-  .header{
-    padding: 0 1%;
+@media (max-width: 1024px){
+  html{
+    font-size: 65%;
   }
+}
+@media (max-width: 991px){
   section{
     padding: 6rem 3% 2rem;
   }
   .footer{
-    padding: 2rem ;
+    padding: 1.8rem ;
   }
 }
-/*@media (max-width: 991px){
-  no coloca */
+@media (max-width: 425px){
+  body{
+    padding: 0;
+  }
+}
+

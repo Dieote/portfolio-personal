@@ -13,8 +13,13 @@
 }
 /*Responsive*/
 
+@media(max-width: 1024px){
+  .footer{
+    width: 75%;
+  }
+}
 @media(max-width: 768px){
   .footer{
-    margin-right: 30%;
+    width: 80%;
   }
 }
