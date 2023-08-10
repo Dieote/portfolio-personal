@@ -104,7 +104,7 @@ img{
 #goLink:hover{
   transform: scale(.3);
 }
-/*responsive*/
+/*responsive
 
 @media (max-width: 1024px){
 .portfolio{
@@ -138,3 +138,4 @@ img{
   margin-left: 15%;
  }
 }
+*/

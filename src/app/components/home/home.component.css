@@ -1,8 +1,11 @@
 .home{
-    display: inline-flex;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     margin: 5rem 2rem;
+}
+.home-content{
+  width: 45%;
 }
 .home-content h3{
   font-size: 2.0rem;
@@ -16,6 +19,10 @@
 }
 .home-content p {
   font-size: 1.4rem;
+}
+.home-img{
+  width: 50%;
+  padding-right: 5%;
 }
 #imag{
   width: 75%;
@@ -137,7 +144,23 @@
       transition: 1s;
       transition-delay: 0.75s;
   }
-/*Responsive*/
+/*Responsive
+@media (max-width: 1440px){
+
+  .home {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  .home-content {
+    text-align: left;
+    padding-left: 6%;
+  }
+}
 @media (max-width: 1024px){
   .home{
     display: inline-block;
@@ -204,3 +227,4 @@
       margin-left: -9rem;
     }
     }
+*/

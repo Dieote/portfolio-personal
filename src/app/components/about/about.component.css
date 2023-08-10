@@ -4,6 +4,7 @@
   align-items: center;
   gap: 3rem;
   background-color: var(--second-bg-color);
+  margin: 0 2%;
 }
 
 .about-img img{
@@ -57,7 +58,7 @@ margin-bottom: .5rem;
 transform: scale(1.02);
 color: var(--main-color);
 }
-/*Responsive*/
+/*Responsive
 @media(max-width: 1024px){
   .about{
     margin-right:20%;
@@ -130,3 +131,4 @@ width: 58rem;
   font-size: 5rem;
 }
 }
+*/

@@ -4,7 +4,7 @@
 }
 .heading{
     text-align: center;
-    margin-top: 10%;
+    margin-top: 5%;
     line-height: 0.8;
     font-size: 2.5rem;
     text-shadow: 2px 2px 2px black;
@@ -15,6 +15,7 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 3rem;
+  margin-bottom: 5%;
 }
 .services-container .services-box{
   width: 25rem;
@@ -165,7 +166,7 @@ padding-left: 20px;
 .star-icon:hover{
     box-shadow: 0 0 1rem var(--main-color);
 }
-/*Responsive*/
+/*Responsive
 @media(max-width: 1024px){
   .heading{
     margin-right: 35rem;
@@ -234,3 +235,4 @@ padding-left: 20px;
     font-size: 2rem;
   }
 }
+*/
