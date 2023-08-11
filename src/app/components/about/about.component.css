@@ -130,7 +130,7 @@ width: 118%;
 }
 @media(max-width: 425px){
   .about{
-    width: 101%;
+    width: 121%;
     }
     .skills{
       column-count: 1;

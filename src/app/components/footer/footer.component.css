@@ -39,10 +39,15 @@
 }
 @media (max-width: 425px){
   .footer{
-    width: 95%;
+    width: 110%;
   }
   .footer-text{
     text-align: center;
     margin-left: 6%;
+  }
+}
+@media (max-width: 320px){
+  .footer{
+    width: 122%;
   }
 }
