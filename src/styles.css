@@ -8,16 +8,9 @@
   --main-color: #fb0477;
 
 }
-html{
-  font-size: 18px;
-}
 body{
   background: var(--bg-color);
   color: var(--text-color);
-}
-section{
-  min-width: 100vh;
-  padding: 1rem 3% 2rem;
 }
 .btn{
   display: inline-block;
@@ -37,21 +30,5 @@ section{
 }
 
 /* RESPONSIVE*/
-@media (max-width: 1200px){
-  html{
-    font-size: 55%;
-  }
+@media (max-width: 375px){
 }
-@media (max-width: 991px){
-  .header{
-    padding: 0 1%;
-  }
-  section{
-    padding: 6rem 3% 2rem;
-  }
-  .footer{
-    padding: 2rem ;
-  }
-}
-/*@media (max-width: 991px){
-  no coloca */

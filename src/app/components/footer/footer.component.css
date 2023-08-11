@@ -12,9 +12,37 @@
   margin-left: 33%;
 }
 /*Responsive*/
-
+@media(max-width: 1024px){
+  .footer{
+    width: 100%;
+  }
+  .footer-text{
+    margin-left: 30%;
+  }
+}
 @media(max-width: 768px){
   .footer{
-    margin-right: 30%;
+    width: 100%;
+  }
+  .footer-text{
+    margin-left: 23%;
+  }
+}
+@media (max-width: 425px){
+  .footer{
+    width: 115%;
+  }
+  .footer-text{
+    text-align: center;
+    margin-left: 6%;
+  }
+}
+@media (max-width: 425px){
+  .footer{
+    width: 95%;
+  }
+  .footer-text{
+    text-align: center;
+    margin-left: 6%;
   }
 }

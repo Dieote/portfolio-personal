@@ -1,14 +1,6 @@
 <div class="header">
   <a routerLink="/home" class="logo">Portafolio</a>
 
-  <div
-    class="menu-icon"
-    (click)="openIconActive()"
-    [class.active]="menuIconActive"
-  >
-    <i class="fas fa-bars"></i>
-  </div>
-
   <div>
     <nav class="navbar" [class.active]="menuIconActive">
       <a routerLink="/home" (click)="closeMenu()">Home</a>
@@ -17,5 +9,12 @@
       <a routerLink="/portfolio" (click)="closeMenu()">Portafolio</a>
       <a routerLink="/contact" (click)="closeMenu()">Contacto</a>
     </nav>
+  </div>
+  <div
+    class="menu-icon"
+    (click)="openIconActive()"
+    [class.active]="menuIconActive"
+  >
+    <i class="fas fa-bars"></i>
   </div>
 </div>

@@ -1,13 +1,11 @@
-.section{
-  min-height: auto;
-  padding-left: 50px;
-  padding-right: 150px;
-  display: block;
-}
 .home{
-    display: inline-flex;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    margin: 5rem 2rem;
+}
+.home-content{
+  width: 45%;
 }
 .home-content h3{
   font-size: 2.0rem;
@@ -21,6 +19,10 @@
 }
 .home-content p {
   font-size: 1.4rem;
+}
+.home-img{
+  width: 50%;
+  padding-right: 5%;
 }
 #imag{
   width: 75%;
@@ -143,32 +145,88 @@
       transition-delay: 0.75s;
   }
 /*Responsive*/
-@media(max-width: 768px){
-  .home{
+@media (max-width: 1024px){
+  .home {
     flex-direction: column;
-  }
+    align-items: center;
 
+  }
+  .home-content{
+    width: 66%;
+    margin-bottom: 5%;
+  }
+  .home-img {
+    width: 80%;
+    padding-right: 25%;
+  }
+  .home-content h1{
+    font-size: 4.2rem;
+  }
   .home-content h3{
-    font-size: 2.8rem;
-      margin-left: 5rem;
+    font-size: 2.5rem;
   }
   .home-content p{
-    font-size: 2.6rem;
-    margin-left: 5rem;
-  }
-
-  .home-content h1 {
-    font-size: 5rem;
-    margin-left: 5rem;
+    font-size: 2.5rem;
   }
   .social-media{
-    margin-left: 5rem;
+    margin-bottom: 2.5rem;
   }
-  .home-img #imag{
-    width: 70vw;
-    margin-top: 3rem;
-    margin-left: -20rem;
-
+  .social-media a{
+    margin-left: 2.5rem;
+    width: 8vw;
+    height: 5rem;
+    font-size: 5rem;
   }
-
+  .social-media i{
+    font-size: 3.5rem;
   }
+  .btn-neon{
+    margin-left: 30%;
+  }
+}
+@media (max-width: 768px){
+  .home-content{
+    width: 90%;
+  }
+  .social-media a{
+    margin-left: 2.5rem;
+    width: 10vw;
+    height: 5rem;
+  }
+  .social-media i{
+    font-size: 2.8rem;
+  }
+  .home-img {
+    width: 85%;
+  }
+}
+@media (max-width: 425px){
+  .home-content{
+    width: 85%;
+  }
+  #writer{
+    white-space: normal;
+    max-width: 115%;
+    animation: none;
+    border-right: none;
+  }
+  .social-media a{
+    width: 18vw;
+  }
+  .btn-neon{
+    margin-left: 23%;
+    padding: 0;
+  }
+  .home-img{
+    width: 30rem;
+  }
+}
+@media (max-width: 375px){
+  .home{
+    margin: 0 0;
+  }
+  .home-img {
+    width: 70%;
+    margin-bottom: 20%;
+  }
+}

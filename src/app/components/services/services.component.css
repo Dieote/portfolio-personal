@@ -4,7 +4,7 @@
 }
 .heading{
     text-align: center;
-    margin-top: 10%;
+    margin-top: 5%;
     line-height: 0.8;
     font-size: 2.5rem;
     text-shadow: 2px 2px 2px black;
@@ -15,6 +15,7 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 3rem;
+  margin-bottom: 5%;
 }
 .services-container .services-box{
   width: 25rem;
@@ -165,22 +166,66 @@ padding-left: 20px;
 .star-icon:hover{
     box-shadow: 0 0 1rem var(--main-color);
 }
-/*Responsive*/
-@media(max-width: 768px){
+/*Responsive
+@media (max-width: 991px){
   .services-container{
     margin-top: 3rem;
+    margin-left: 5rem;
+    width: 100%;
   }
   .heading {
     margin-top: 10rem;
   }
 }
-@media (max-width: 991px){
-  .services-container{
-    margin-top: 3rem;
-    margin-left: 15rem;
-    width: 100%;
+
+*/
+@media(max-width: 1024px){
+  .heading{
+    margin-top: 5rem;
   }
-  .heading {
-    margin-top: 10rem;
+}
+@media(max-width: 768px){
+  .services-container .services-box{
+  width: 31rem;
+  height: 35rem;
+ }
+ .services-box h3{
+  font-size: 2.5rem;
+}
+.services-box p{
+  font-size: 1.9rem;
+}
+#description{
+  font-size: 1.6rem;
+}
+}
+@media (max-width: 425px){
+
+  .services-container{
+    margin-left: 10%;
+  }
+  .services-container .services-box{
+    width: 35rem;
+    height: 62rem;
+  }
+  .services-box h3{
+    font-size: 3rem;
+  }
+  .services-box p{
+    font-size: 2.3rem;
+  }
+  .services-box .btn{
+    font-size: 2.5rem;
+  }
+  .services-box #description{
+    font-size: 2rem;
+  }
+}
+@media (max-width: 425px){
+  .services-container .services-box{
+    height: 68rem;
+  }
+  .services-container{
+    margin-left: 1%;
   }
 }

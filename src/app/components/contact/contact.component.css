@@ -1,19 +1,11 @@
-.section{
-  display: block;
-  padding: 0;
-  margin-top: 0;
-}
 .heading{
   text-align: center;
   font-size: 3rem;
-}
-.contact h2{
-  margin-top: 4rem;
+  margin-top: 7rem;
 }
 .contact form{
   max-width: 70rem;
   margin: 1rem 7rem;
-  text-align: center;
 }
 .contact form .input-box{
   justify-content: space-between;
@@ -23,11 +15,11 @@
 .contact form textarea{
   width: 50%;
   padding: .5rem;
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: var(--text-color);
   background-color: var(--second-bg-color);
   border-radius: .8rem;
-  margin: .7rem 10rem;
+  margin: .7rem 20rem;
 }
 .contact form .input-box input{
   width: 49%;
@@ -38,9 +30,10 @@
 .contact form .btn{
   margin-top: 2rem;
   margin-bottom: 4rem;
+  margin-left: 30%;
   cursor: pointer;
 }
-/*Responsive*/
+/*Responsive
 @media(max-width: 768px){
   .heading{
     text-align: left;
@@ -58,4 +51,26 @@
   .contact form{
     text-align: left;
   }
+}
+*/
+@media(max-width: 1024px){
+
+  .contact form .input-box input,
+  .contact form textarea{
+    margin: 2% 0;
+    width: 100%;
+  }
+  .contact form .btn{
+   margin-left: 38%;
+  }
+}
+@media(max-width: 425px){
+
+  .contact form .input-box input,
+  .contact form textarea{
+    width: 190%;
+    margin: 6px -4rem
+  }
+  .contact form .btn{
+   margin: 29% 19%;  }
 }
