@@ -52,21 +52,6 @@
   margin-right: 0;
 }
 /*BREAKPOINTS
-@media (max-width: 1440px){
-
-  .navbar a{
-    font-size: 1.4rem;
-    margin-left: 0;
-  }
-}
-@media (max-width: 1024px){
-  .header{
-    margin-left: 5rem ;
-  }
-  .navbar a{
-    margin-left: 0;
-  }
-}
 @media(max-width: 425px){
   .header{
     padding: 1rem 0 1rem 2rem;
@@ -141,3 +126,48 @@
 }
 }
 */
+@media (max-width: 1024px){
+  .logo{
+    font-size: 3rem;
+  }
+  .menu-icon{
+    display: block;
+    font-size: 2.8rem;
+    position: fixed;
+    left: 95%;
+  }
+  .navbar{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 180%;
+    padding: 1rem 2%;
+    background: var(--bg-color);
+    border-top: .1rem solid var(--main-color);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+    display: none;
+  }
+  .navbar.active{
+    display: block;
+    width: 100vw;
+  }
+.navbar a{
+  display: block;
+  font-size: 2rem;
+  margin: 1rem 2rem;
+}
+}
+@media (max-width: 768px){
+  .menu-icon{
+    left: 90%;
+  }
+}
+@media (max-width: 375px){
+  .logo{
+    font-size: 1.8rem;
+  }
+  .menu-icon{
+    font-size: 2rem;
+    left: 75%;
+  }
+}

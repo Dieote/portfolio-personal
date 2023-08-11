@@ -144,87 +144,89 @@
       transition: 1s;
       transition-delay: 0.75s;
   }
-/*Responsive
-@media (max-width: 1440px){
-
-  .home {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-  }
-  .home-content {
-    text-align: left;
-    padding-left: 6%;
-  }
-}
+/*Responsive*/
 @media (max-width: 1024px){
-  .home{
-    display: inline-block;
-  }
-}
-@media(max-width: 768px){
-  .home{
+  .home {
     flex-direction: column;
+    align-items: center;
+
+  }
+  .home-content{
+    width: 66%;
+    margin-bottom: 5%;
+  }
+  .home-img {
+    width: 80%;
+    padding-right: 25%;
+  }
+  .home-content h1{
+    font-size: 4.2rem;
   }
   .home-content h3{
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   }
   .home-content p{
-    font-size: 2.6rem;
-    padding-right: 5%;
-  }
-
-  .home-content h1 {
-    font-size: 5rem;
+    font-size: 2.5rem;
   }
   .social-media{
-    margin-left: 5rem;
+    margin-bottom: 2.5rem;
   }
-  .home-img #imag{
-    width: 100vw;
-    margin-top: 3rem;
-    margin-left: -35rem;
+  .social-media a{
+    margin-left: 2.5rem;
+    width: 8vw;
+    height: 5rem;
+    font-size: 5rem;
   }
-
+  .social-media i{
+    font-size: 3.5rem;
   }
-
-@media(max-width: 425px){
-    .home{
-      flex-direction: column;
-    }
-
-    .home-content h3{
-      font-size: 3.8rem;
-        margin-left: 2rem;
-    }
-    .home-content p{
-      font-size: 4.6rem;
-      margin-left: 2rem;
-    }
-
-    .home-content h1 {
-      font-size: 8.9rem;
-    }
-    .social-media{
-      margin-bottom: 8rem;
-    }
-    .social-media a{
-      margin-left: 5rem;
-      width: 15vw;
-      font-size: 9rem;
-    }
-    .social-media i{
-      width: 15vw;
-    }
-
-    .home-img #imag{
-      width: 100vw;
-      margin-top: 3rem;
-      margin-left: -9rem;
-    }
-    }
-*/
+  .btn-neon{
+    margin-left: 30%;
+  }
+}
+@media (max-width: 768px){
+  .home-content{
+    width: 90%;
+  }
+  .social-media a{
+    margin-left: 2.5rem;
+    width: 10vw;
+    height: 5rem;
+  }
+  .social-media i{
+    font-size: 2.8rem;
+  }
+  .home-img {
+    width: 85%;
+  }
+}
+@media (max-width: 425px){
+  .home-content{
+    width: 85%;
+  }
+  #writer{
+    white-space: normal;
+    max-width: 115%;
+    animation: none;
+    border-right: none;
+  }
+  .social-media a{
+    width: 18vw;
+  }
+  .btn-neon{
+    margin-left: 23%;
+    padding: 0;
+  }
+  .home-img{
+    width: 30rem;
+  }
+}
+@media (max-width: 375px){
+  .home{
+    margin: 0 0;
+  }
+  .home-img {
+    width: 70%;
+    margin-bottom: 20%;
+  }
+}

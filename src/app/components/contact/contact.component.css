@@ -1,9 +1,7 @@
 .heading{
   text-align: center;
   font-size: 3rem;
-}
-.contact h2{
-  margin-top: 4rem;
+  margin-top: 7rem;
 }
 .contact form{
   max-width: 70rem;
@@ -55,3 +53,24 @@
   }
 }
 */
+@media(max-width: 1024px){
+
+  .contact form .input-box input,
+  .contact form textarea{
+    margin: 2% 0;
+    width: 100%;
+  }
+  .contact form .btn{
+   margin-left: 38%;
+  }
+}
+@media(max-width: 425px){
+
+  .contact form .input-box input,
+  .contact form textarea{
+    width: 190%;
+    margin: 6px -4rem
+  }
+  .contact form .btn{
+   margin: 29% 19%;  }
+}
