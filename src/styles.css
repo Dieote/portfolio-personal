@@ -11,6 +11,15 @@
 body{
   background: var(--bg-color);
   color: var(--text-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+app-root {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 .btn{
   display: inline-block;
@@ -24,6 +33,7 @@ body{
   transition: .5s ease;
   text-decoration: none ;
   margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 .btn:hover{
   box-shadow: none;
