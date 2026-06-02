@@ -1,15 +1,38 @@
-<h2 class="heading">Servicios</h2>
+<h2 class="heading">Serv<span style="color: var(--main-color);">i</span>c<span
+    style="color: var(--main-color);">i</span>os</h2>
 <div class="services-container">
+  <div class="services-box">
+    <i class="fa fa-code" aria-hidden="true"></i>
+    <h3>Técnico Superior en Desarrollo de Aplicaciones Web</h3>
+    <p>
+      Egresado 2026 - Despliegue de aplicaciones en servidores y servicios en la nube.
+    </p>
+    <a class="btn" (click)="openModalWebDev()">Certificado</a>
+    <p class="description">
+      Java, HTML, CSS, JavaScript, Python y PHP | SQL, PostgreSQL y MongoDB | Spring Boot, Angular, React, Vue +
+      Bootstrap
+    </p>
+  </div>
+  <div class="overlay" (click)="closeModalWebDev()" *ngIf="showModalWebDev">
+    <div class="modal-container">
+      <div class="img-box">
+        <button class="btn close-btn" (click)="showModalWebDev = false">
+          &times;
+        </button>
+        <img [src]="'/assets/'" />
+      </div>
+    </div>
+  </div>
   <div class="services-box">
     <i class="fa fa-code" aria-hidden="true"></i>
     <h3>Desarrollo Web</h3>
     <p>
-      Soy un Programador Web Fullstack capaz de crear aplicaciones Web y
-      Empresariales, con experiencia en bases de datos y diseño de vistas
+      Programación Web Fullstack capaz de crear aplicaciones Web y
+      Empresariales utilizando bases de datos MySql y diseño de vistas
       responsivas para navegadores.
     </p>
     <a class="btn" (click)="openModalWebDev()">Certificado</a>
-    <p id="description">
+    <p class="description">
       Java, Java EE, Hibernate y Spring Boot| SQL | Angular, Bootstrap
     </p>
   </div>
@@ -28,14 +51,11 @@
     <i class="fa fa-bug" aria-hidden="true"></i>
     <h3>Tester QA</h3>
     <p>
-      Aseguramiento de calidad, reporte de bugs, pruebas manuales y
-      automatización de pruebas. Tengo conocimientos en pruebas ágiles en
-      diversos marcos de trabajo.
+      Reportes de bugs, pruebas manuales y automatización de pruebas.
     </p>
     <a class="btn" (click)="openModalQA()">Certificado</a>
-    <p id="description">
-      Pruebas manuales y automáticas | Reportes de bugs, casos de prueba en
-      projectos agiles
+    <p class="description">
+      Selenium, Cypress, Postman | Pruebas funcionales, de regresión y de integración
     </p>
   </div>
   <div class="overlay" (click)="closeModalQA()" *ngIf="showModalQA">
@@ -53,20 +73,16 @@
     <i class="fa fa-cutlery" aria-hidden="true"></i>
     <h3>Camarero | Sommelier</h3>
     <p>
-      Con experiencia gastronómica en Argentina y España, ofrezco atención
-      personalizada, habilidades como encargado de salón y bodega,junto con
+      9 años de experiencia gastronómica en Argentina y España, atención
+      personalizada, habilidades como encargado de salón y bodega, junto con
       servicios de sommelier.
     </p>
     <a class="btn" (click)="openModalRestaurant()">Restaurantes</a>
-    <p id="description">
-      Atención al cliente | Encargado | Sommelier | Manejo de personal
+    <p class="description">
+      Atención al cliente | Liderazgo | Sommelier | Manejo de caja | Gestión de stock
     </p>
   </div>
-  <div
-    class="overlay"
-    (click)="closeModalRestaurant()"
-    *ngIf="showModalRestaurant"
-  >
+  <div class="overlay" (click)="closeModalRestaurant()" *ngIf="showModalRestaurant">
     <div class="modal-container">
       <div class="img-box">
         <button class="btn close-btn" (click)="showModalRestaurant = false">
@@ -77,31 +93,40 @@
             <h4>Argentina</h4>
             <ul>
               <li>
-                <i class="fa fa-cutlery" aria-hidden="true"></i> Restaurante
-                Club de Campo - Mendoza | 2019 - 2021.
+                <i class="fa fa-cutlery" aria-hidden="true"></i> Restaurante Club de Campo - Mendoza | 2019-2021
                 <ul>
                   <li id="links-work">
-                    <a
-                      href="https://www.instagram.com/clubdecampo.restaurante/?hl=es"
-                      target="_blank"
-                    >
+                    <a href="https://www.instagram.com/clubdecampo.restaurante/?hl=es" target="_blank">
                       <i class="fab fa-instagram instagram-icon"></i>
                     </a>
-                    <a
-                      href="https://clubdecamporestaurante.com/"
-                      target="_blank"
-                    >
-                      <i
-                        class="fa fa-external-link external-icon"
-                        aria-hidden="true"
-                      ></i>
+                    <a href="https://clubdecamporestaurante.com/" target="_blank">
+                      <i class="fa fa-external-link external-icon" aria-hidden="true"></i>
                     </a>
                   </li>
                 </ul>
               </li>
               <li>
-                <i class="fa fa-cutlery" aria-hidden="true"></i> Restaurante
-                Anastasio - Mendoza | 2018 - 2019.
+                <i class="fa fa-cutlery" aria-hidden="true"></i> Restaurante Anastasio Parrilla&Grill | 2018-2019
+              </li>
+              <li>
+                <i class="fa fa-film" aria-hidden="true"></i> Cinepolis - Mendoza | 2017-2018
+                <ul>
+                  <li id="links-work">
+                    <a href="https://clubdecamporestaurante.com/" target="_blank">
+                      <i class="fa fa-external-link external-icon" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <i class="fa fa-book" aria-hidden="true"></i> Secretario Escolar - Mendoza | 2014-2017
+                <ul>
+                  <li id="links-work">
+                    <a href="https://www.escuelajvzapata.org/" target="_blank">
+                      <i class="fa fa-external-link external-icon" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>
@@ -110,43 +135,44 @@
             <ul>
               <li>
                 <i class="fa fa-cutlery" aria-hidden="true"></i>Restaurante La
+                Orza - Toledo | Julio 2022 / Febrero 2023.
+                <ul>
+                  <li id="links-work">
+                    <a href="https://guide.michelin.com/es/es/castilla-la-mancha/es-toledo/restaurante/la-orza"
+                      target="_blank">
+                      <i class="fa fa-star star-icon" aria-hidden="true"></i>
+                    </a>
+                    <a target="_blank" href="https://www.restaurantelaorza.com/">
+                      <i class="fa fa-external-link external-icon" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <i class="fa fa-cutlery" aria-hidden="true"></i>Restaurante La
                 Ermitaña - Toledo | junio 2023
                 <ul>
                   <li id="links-work">
-                    <a
-                      href="https://www.instagram.com/laermitana.es/?hl=es"
-                      target="_blank"
-                    >
+                    <a href="https://www.instagram.com/laermitana.es/?hl=es" target="_blank">
                       <i class="fab fa-instagram instagram-icon"></i>
                     </a>
                     <a href="https://laermitana.es/" target="_blank">
-                      <i
-                        class="fa fa-external-link external-icon"
-                        aria-hidden="true"
-                      ></i>
+                      <i class="fa fa-external-link external-icon" aria-hidden="true"></i>
                     </a>
                   </li>
                 </ul>
               </li>
               <li>
-                <i class="fa fa-cutlery" aria-hidden="true"></i>Restaurante La
-                Orza - Toledo | Julio 2022 / Febrero 2023.
+                <i class="fa fa-cutlery" aria-hidden="true"></i>Restaurante Alfileritos24 - Toledo | Agosto 2023 -
+                Noviembre 2024
                 <ul>
                   <li id="links-work">
-                    <a
-                      href="https://guide.michelin.com/es/es/castilla-la-mancha/es-toledo/restaurante/la-orza"
-                      target="_blank"
-                    >
-                      <i class="fa fa-star star-icon" aria-hidden="true"></i>
+                    <a href="https://www.instagram.com/alfileritos24/?hl=es" target="_blank">
+                      <i class="fab fa-instagram instagram-icon"></i>
                     </a>
-                    <a
-                      target="_blank"
-                      href="https://www.restaurantelaorza.com/"
-                    >
-                      <i
-                        class="fa fa-external-link external-icon"
-                        aria-hidden="true"
-                      ></i>
+                    <a href="https://alfileritos24.com/" target="_blank">
+                      <i class="fa fa-external-link external-icon" aria-hidden="true"></i>
                     </a>
                   </li>
                 </ul>
@@ -166,5 +192,41 @@
       formación musical de pequeño explorando rumbos artísticos. Tengo
       habilidades en lectura musical y ejecución.
     </p>
+  </div>
+</div>
+
+<div class="skill-content">
+    <h2>Lenguajes</h2>
+  <div class="skills">
+    <h4>Java</h4>
+    <h4>Angular</h4>
+    <h4>Html/Css</h4>
+    <h4>PHP</h4>
+    <h4>Python</h4>
+    <h4>Javascript</h4>
+    <h4>Typescript</h4>
+  </div>
+  <h2>Tecnologías</h2>
+  <div class="skills">
+    <h4>PostgresSQL</h4>
+    <h4>Node.js</h4>
+    <h4>Angular</h4>
+    <h4>Cypress</h4>
+    <h4>MySQL/DBeaver</h4>
+    <h4>SpringBoot</h4>
+    <h4>Bootstrap</h4>
+    <h4>Selenium</h4>
+    <h4>MongoDB</h4>
+    <h4>Django</h4>
+  </div>
+  <h2>Habilidades</h2>
+  <div class="skills">
+    <h4>Metodologías Agiles</h4>
+    <h4>Comunicación</h4>
+    <h4>Organización</h4>
+    <h4>Metódico</h4>
+    <h4>Trabajo en equipo</h4>
+    <h4>Adaptabilidad</h4>
+    <h4>Liderazgo</h4>
   </div>
 </div>

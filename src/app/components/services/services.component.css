@@ -36,10 +36,10 @@ transform: scale(1.1);
   color: var(--main-color);
 }
 .services-box p {
-  font-size: 1.6rem;
-  color: var(-bg-color);
+  font-size: 1.3rem;
+  color: var(--text-color);
 }
-#description{
+.description {
   text-align: center;
   color: var(--text-color);
   margin-bottom: 0;
@@ -47,8 +47,46 @@ transform: scale(1.1);
   opacity: 40%;
   font-size: 1.4rem;
   text-shadow: 2px 2px 2px black;
-
 }
+/* skills */
+.skill-content {
+  margin: 3rem 0 4rem;
+  text-align: center;
+}
+
+.skill-content h2 {
+  font-size: 2rem;
+  color: rgba(225, 217, 217, 0.6);
+  text-shadow: 2px 2px 2px black;
+  margin-bottom: 1rem;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+  margin: 0 auto 2.5rem;
+  max-width: 900px;
+  padding: 0 1rem;
+}
+
+.skills h4 {
+  margin: 0;
+  padding: 0.5rem 1.4rem;
+  font-size: 1.5rem;
+  font-style: italic;
+  border: 1px solid var(--main-color);
+  border-radius: 2rem;
+  transition: .3s ease;
+}
+
+.skills h4:hover {
+  background: var(--main-color);
+  color: var(--second-bg-color);
+  transform: scale(1.05);
+}
+
 /*Estilos Modal*/
 .overlay {
   position: fixed;
@@ -195,12 +233,14 @@ padding-left: 20px;
 .services-box p{
   font-size: 1.9rem;
 }
-#description{
+.description{
   font-size: 1.6rem;
 }
 }
 @media (max-width: 425px){
-
+  .skills h4 {
+    font-size: 1.8rem;
+  }
   .services-container{
     margin-left: 10%;
   }
@@ -217,7 +257,7 @@ padding-left: 20px;
   .services-box .btn{
     font-size: 2.5rem;
   }
-  .services-box #description{
+  .services-box .description{
     font-size: 2rem;
   }
 }

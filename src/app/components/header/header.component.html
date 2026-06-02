@@ -3,18 +3,13 @@
 
   <div>
     <nav class="navbar" [class.active]="menuIconActive">
-      <a routerLink="/home" (click)="closeMenu()">Home</a>
-      <a routerLink="/about" (click)="closeMenu()">Sobre mi</a>
-      <a routerLink="/services" (click)="closeMenu()">Servicios</a>
-      <a routerLink="/portfolio" (click)="closeMenu()">Portafolio</a>
-      <a routerLink="/contact" (click)="closeMenu()">Contacto</a>
+      <a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"
+        (click)="closeMenu()">Home</a>
+      <a routerLink="/experience" routerLinkActive="active" (click)="closeMenu()">Experiencia</a>
+      <a routerLink="/services" routerLinkActive="active" (click)="closeMenu()">Servicios</a>
+      <a routerLink="/portfolio" routerLinkActive="active" (click)="closeMenu()">Portafolio</a>
+      <a routerLink="/contact" routerLinkActive="active" (click)="closeMenu()">Contacto</a>
     </nav>
   </div>
-  <div
-    class="menu-icon"
-    (click)="openIconActive()"
-    [class.active]="menuIconActive"
-  >
-    <i class="fas fa-bars"></i>
-  </div>
+  <div class="menu-icon" (click)="openIconActive()" [class.active]="menuIconActive"> </div>
 </div>

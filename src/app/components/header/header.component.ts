@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css'],
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit, OnDestroy {
   menuIconActive = false;
 
   openIconActive() {
@@ -25,10 +25,10 @@ export class HeaderComponent {
     window.removeEventListener('scroll', this.onScroll);
   }
 
-  onScroll() {
+  private readonly onScroll = (): void => {
     const header = document.querySelector('header');
     if (header) {
       header.classList.toggle('sticky', window.scrollY > 100);
     }
-  }
+  };
 }

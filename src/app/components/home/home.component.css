@@ -20,20 +20,11 @@
 .home-content p {
   font-size: 1.4rem;
 }
-.home-img{
+.home-cv{
   width: 50%;
-  padding-right: 5%;
-}
-#imag{
-  width: 75%;
-  box-shadow: 0 6px 10px 0 rgba(251, 4, 119, 0.6), 0 6px 10px 0 rgba(251, 4, 119, 0.6);
-  border-radius: 40%;
-  transform: translate(40%,0%);
-  filter:grayscale(100%);
-  transition: 1.5% ease-in-out;
-}
-#imag:hover{
-  filter: grayscale(0%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .social-media a {
   display: inline-flex;
@@ -46,7 +37,7 @@
   border-radius: 50%;
   font-size: 2rem;
   color: var(--main-color);
-  margin: 4rem 1.5rem 3rem;
+  margin: 4rem 4.5rem 3rem;
 }
 .social-media a:hover{
   background: var(--main-color);
@@ -59,19 +50,19 @@
     font-family: monospace;
     white-space: nowrap;
     border-right: 4px solid;
-    width: 26ch;
+    width: 32ch;
     color: var(--main-color);
 
-    animation: typing 2s steps(26), blink .5s infinite step-end alternate;
+    animation: typing 2s steps(32), blink .5s infinite step-end alternate;
     overflow:hidden;
     }
 
-    @keyFrames typing {
+    @keyframes typing {
 
     from { width: 0}
     }
 
-    @keyFrames blink {
+    @keyframes blink {
      50% { border-color: transparent}
     }
 
@@ -85,8 +76,6 @@
       font-size: 24px;
       overflow: hidden;
       transition: 0.2s;
-      margin-left: 23%;
-      margin-bottom: 10%;
   }
   .btn-neon:hover{
       background: #a945c7;
@@ -144,6 +133,8 @@
       transition: 1s;
       transition-delay: 0.75s;
   }
+
+
 /*Responsive*/
 @media (max-width: 1024px){
   .home {
@@ -155,9 +146,9 @@
     width: 66%;
     margin-bottom: 5%;
   }
-  .home-img {
-    width: 80%;
-    padding-right: 25%;
+  .home-cv {
+    width: 100%;
+    justify-content: center;
   }
   .home-content h1{
     font-size: 4.2rem;
@@ -180,10 +171,8 @@
   .social-media i{
     font-size: 3.5rem;
   }
-  .btn-neon{
-    margin-left: 30%;
-  }
 }
+
 @media (max-width: 768px){
   .home-content{
     width: 90%;
@@ -196,7 +185,7 @@
   .social-media i{
     font-size: 2.8rem;
   }
-  .home-img {
+  .home-cv {
     width: 85%;
   }
 }
@@ -213,20 +202,16 @@
   .social-media a{
     width: 18vw;
   }
-  .btn-neon{
-    margin-left: 23%;
-    padding: 0;
-  }
-  .home-img{
-    width: 30rem;
+  .home-cv{
+    width: 100%;
   }
 }
 @media (max-width: 375px){
   .home{
     margin: 0 0;
   }
-  .home-img {
-    width: 70%;
+  .home-cv {
+    width: 100%;
     margin-bottom: 20%;
   }
 }

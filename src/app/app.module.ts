@@ -5,26 +5,27 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
-import { AboutComponent } from './components/about/about.component';
+import { ExperienceComponent } from './components/experience/experience.component';
 import { ServicesComponent } from './components/services/services.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 
 import { LayoutModule } from '@angular/cdk/layout';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    AboutComponent,
+    ExperienceComponent,
     ServicesComponent,
     PortfolioComponent,
     ContactComponent,
     FooterComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, LayoutModule],
+  imports: [BrowserModule, AppRoutingModule, LayoutModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

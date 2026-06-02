@@ -8,7 +8,26 @@
   display: flex;
   align-items: center;
   z-index: 90;
+  margin-bottom: 1rem;
 }
+.header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, #a945c7 50%, transparent 100%);
+  background-size: 200% 100%;
+  background-position: -100% 0;
+  animation: headerBorder 2s linear infinite;
+}
+
+@keyframes headerBorder {
+  from { background-position: -100% 0; }
+  to   { background-position:  100% 0; }
+}
+
 .header.sticky{
   border-bottom: .1rem solid rgba(0, 0, 0, .2);
 }
@@ -22,18 +41,24 @@
   margin-right: 25%;
 }
 .navbar{
-  width: 101%;
+  width: 100%;
+  display: block;
+  align-items: center;
 }
 .navbar a{
   font-size: 1.4rem;
   text-decoration: none;
   color: var(--text-color);
   margin-left: 35px;
-  margin-right: 55px;
+  margin-right: 50px;
+  padding-bottom: 4px;
+  border-bottom: 1.5px solid transparent;
   transition: .3s;
 }
-.navbar a:hover{
+.navbar a:hover,
+.navbar a.active{
   color: var(--main-color);
+  border-bottom-color: #fb0477;
 }
 .menu-icon {
   font-size: 1.5rem;

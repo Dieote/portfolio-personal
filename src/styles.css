@@ -1,6 +1,7 @@
 @import '~@fortawesome/fontawesome-free/css/all.css';
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
+
 :root {
   --bg-color: #1f242d;
   --second-bg-color: #3c4554;
@@ -11,6 +12,16 @@
 body{
   background: var(--bg-color);
   color: var(--text-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Inter', sans-serif;
+}
+
+app-root {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 .btn{
   display: inline-block;
