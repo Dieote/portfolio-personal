@@ -33,6 +33,12 @@
   margin-left: 30%;
   cursor: pointer;
 }
+.contact form .btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.msg-success { color: #4caf50; margin-left: 30%; }
+.msg-error   { color: #f44336; margin-left: 30%; }
 /*Responsive
 @media(max-width: 768px){
   .heading{

@@ -1,14 +1,23 @@
 <div class="contact" id="contact">
-  <h2 class="heading">Comunicáte</h2>
+  <h2 class="heading">Comunic<span style="color: var(--main-color);">á</span>te</h2>
 
-  <form action="#">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
     <div class="input-box">
-      <input type="text" placeholder="Nombre Completo" />
-      <input type="email" placeholder="Direccion de email" />
-      <input type="text" placeholder="Asunto" />
+      <input formControlName="name"    type="text"  placeholder="Nombre Completo" />
+      <input formControlName="email"   type="email" placeholder="Dirección de email" />
+      <input formControlName="subject" type="text"  placeholder="Asunto" />
     </div>
-    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <textarea formControlName="message" cols="30" rows="10"></textarea>
     <br />
-    <input type="submit" value="Enviar mensaje" class="btn" />
+
+    <p *ngIf="sent"  class="msg-success">¡Mensaje enviado!</p>
+    <p *ngIf="error" class="msg-error">Hubo un error, intentá de nuevo.</p>
+
+    <input
+      type="submit"
+      [value]="sending ? 'Enviando...' : 'Enviar mensaje'"
+      [disabled]="form.invalid || sending"
+      class="btn"
+    />
   </form>
 </div>
