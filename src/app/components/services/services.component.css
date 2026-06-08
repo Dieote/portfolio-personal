@@ -19,9 +19,8 @@
 }
 .services-container .services-box{
   width: 25rem;
-  height: 30rem;
   background: var(--second-bg-color);
-  padding: 2rem 2rem 1rem;
+  padding: 2rem 2rem 1rem 1rem;
   border-radius: 2rem;
   text-align: center;
   border: 2rem solid var(-bg-color);
