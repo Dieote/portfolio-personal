@@ -1,45 +1,49 @@
-@import '~@fortawesome/fontawesome-free/css/all.css';
-@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+ @import '~@fortawesome/fontawesome-free/css/fontawesome.css';
+ @import '~@fortawesome/fontawesome-free/css/brands.css';
+ @import '~@fortawesome/fontawesome-free/css/solid.css';
+ @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
 
-:root {
-  --bg-color: #1f242d;
-  --second-bg-color: #3c4554;
-  --text-color: #c8d8f4;
-  --main-color: #fb0477;
+ :root {
+   --bg-color: #1f242d;
+   --second-bg-color: #3c4554;
+   --text-color: #c8d8f4;
+   --main-color: #fb0477;
 
-}
-body{
-  background: var(--bg-color);
-  color: var(--text-color);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  font-family: 'Inter', sans-serif;
-}
+ }
 
-app-root {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-.btn{
-  display: inline-block;
-  padding: .1rem .8rem;
-  background: var(--main-color);
-  border-radius: 4rem;
-  box-shadow: 0 0 1rem var(--main-color);
-  font-size: 1.3rem;
-  color: black;
-  letter-spacing: 400;
-  transition: .5s ease;
-  text-decoration: none ;
-  margin-top: 0.5rem;
-}
-.btn:hover{
-  box-shadow: none;
-}
+ body {
+   background: var(--bg-color);
+   color: var(--text-color);
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   font-family: 'Inter', sans-serif;
+ }
 
-/* RESPONSIVE*/
-@media (max-width: 375px){
-}
+ app-root {
+   display: flex;
+   flex-direction: column;
+   flex: 1;
+ }
+
+ .btn {
+   display: inline-block;
+   padding: .1rem .8rem;
+   background: var(--main-color);
+   border-radius: 4rem;
+   box-shadow: 0 0 1rem var(--main-color);
+   font-size: 1.3rem;
+   color: black;
+   letter-spacing: 400;
+   transition: .5s ease;
+   text-decoration: none;
+   margin-top: 0.5rem;
+ }
+
+ .btn:hover {
+   box-shadow: none;
+ }
+
+ /* RESPONSIVE*/
+ @media (max-width: 375px) {}
