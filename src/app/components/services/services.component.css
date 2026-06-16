@@ -27,7 +27,7 @@
   padding: 2rem 2rem 1rem;
   border-radius: 2rem;
   text-align: center;
-  border: 2rem solid var(--bg-color);
+  border: 1.2rem solid var(--bg-color);
   transition: .5s ease;
 }
 

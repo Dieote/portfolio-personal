@@ -6,9 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./services.component.css'],
 })
 export class ServicesComponent {
+  showModalTechSup = false;
   showModalWebDev = false;
   showModalQA = false;
   showModalRestaurant = false;
+
+  openModalTechSup(): void {
+    this.showModalTechSup = true;
+  }
+
+  closeModalTechSup(): void {
+    this.showModalTechSup = false;
+  }
 
   openModalWebDev(): void {
     this.showModalWebDev = true;

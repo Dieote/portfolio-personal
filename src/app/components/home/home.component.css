@@ -297,6 +297,85 @@
   }
 }
 
+/* Efecto de borde en dispositivos táctiles: reemplaza el hover con animación automática */
+@media (hover: none) {
+  .btn-neon #span1 {
+    animation: btn-top 4s ease 0s infinite;
+  }
+
+  .btn-neon #span2 {
+    animation: btn-right 4s ease 0.25s infinite;
+  }
+
+  .btn-neon #span3 {
+    animation: btn-bottom 4s ease 0.5s infinite;
+  }
+
+  .btn-neon #span4 {
+    animation: btn-left 4s ease 0.75s infinite;
+  }
+}
+
+@keyframes btn-top {
+  0% {
+    left: -100%;
+  }
+
+  25% {
+    left: 100%;
+  }
+
+  25.01%,
+  100% {
+    left: -100%;
+  }
+}
+
+@keyframes btn-right {
+  0% {
+    top: -100%;
+  }
+
+  25% {
+    top: 100%;
+  }
+
+  25.01%,
+  100% {
+    top: -100%;
+  }
+}
+
+@keyframes btn-bottom {
+  0% {
+    right: -100%;
+  }
+
+  25% {
+    right: 100%;
+  }
+
+  25.01%,
+  100% {
+    right: -100%;
+  }
+}
+
+@keyframes btn-left {
+  0% {
+    bottom: -100%;
+  }
+
+  25% {
+    bottom: 100%;
+  }
+
+  25.01%,
+  100% {
+    bottom: -100%;
+  }
+}
+
 /* Móvil pequeño */
 @media (max-width: 320px) {
   .home-content h1 {

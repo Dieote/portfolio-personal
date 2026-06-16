@@ -7,19 +7,19 @@
     <p>
       Egresado 2026 - Despliegue de aplicaciones en servidores y servicios en la nube.
     </p>
-    <a class="btn" (click)="openModalWebDev()">Certificado</a>
+    <a class="btn" (click)="openModalTechSup()">Certificado</a>
     <p class="description">
       Java, HTML, CSS, JavaScript, Python y PHP | SQL, PostgreSQL y MongoDB | Spring Boot, Angular, React, Vue +
       Bootstrap
     </p>
   </div>
-  <div class="overlay" (click)="closeModalWebDev()" *ngIf="showModalWebDev">
+  <div class="overlay" (click)="closeModalTechSup()" *ngIf="showModalTechSup">
     <div class="modal-container">
       <div class="img-box">
-        <button class="btn close-btn" (click)="showModalWebDev = false">
+        <button class="btn close-btn" (click)="showModalTechSup = false">
           &times;
         </button>
-        <img [src]="'/assets/'" />
+        <img [src]="'/assets/certificadoUE.png'" loading="lazy" />
       </div>
     </div>
   </div>

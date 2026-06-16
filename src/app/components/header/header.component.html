@@ -5,9 +5,9 @@
     <nav class="navbar" [class.active]="menuIconActive">
       <a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"
         (click)="closeMenu()">Home</a>
+      <a routerLink="/portfolio" routerLinkActive="active" (click)="closeMenu()">Portafolio</a>
       <a routerLink="/experience" routerLinkActive="active" (click)="closeMenu()">Experiencia</a>
       <a routerLink="/services" routerLinkActive="active" (click)="closeMenu()">Servicios</a>
-      <a routerLink="/portfolio" routerLinkActive="active" (click)="closeMenu()">Portafolio</a>
       <a routerLink="/contact" routerLinkActive="active" (click)="closeMenu()">Contacto</a>
     </nav>
   </div>
