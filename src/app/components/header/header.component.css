@@ -3,13 +3,13 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: .3rem 1%;
+  padding: .3rem 1% 1% .3rem;
   background: var(--bg-color);
   display: flex;
   align-items: center;
   z-index: 90;
-  margin-bottom: 1rem;
 }
+
 .header::after {
   content: '';
   position: absolute;
@@ -24,175 +24,118 @@
 }
 
 @keyframes headerBorder {
-  from { background-position: -100% 0; }
-  to   { background-position:  100% 0; }
+  from {
+    background-position: -100% 0;
+  }
+
+  to {
+    background-position: 100% 0;
+  }
 }
 
-.header.sticky{
+.header.sticky {
   border-bottom: .1rem solid rgba(0, 0, 0, .2);
 }
-.logo{
+
+.logo {
   font-size: 2.2rem;
   color: var(--text-color);
   font-family: Tahoma, sans-serif;
   font-weight: 600;
   cursor: default;
   text-decoration: none;
-  margin-right: 25%;
+  margin-right: auto;
 }
-.navbar{
-  width: 100%;
-  display: block;
+
+.navbar {
+  display: flex;
   align-items: center;
+  gap: 0.5rem;
 }
-.navbar a{
+
+.navbar a {
   font-size: 1.4rem;
   text-decoration: none;
   color: var(--text-color);
-  margin-left: 35px;
-  margin-right: 50px;
-  padding-bottom: 4px;
+  padding: 0.4rem 0.8rem;
   border-bottom: 1.5px solid transparent;
   transition: .3s;
 }
+
 .navbar a:hover,
-.navbar a.active{
+.navbar a.active {
   color: var(--main-color);
-  border-bottom-color: #fb0477;
+  border-bottom-color: var(--main-color);
 }
+
 .menu-icon {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: var(--text-color);
   cursor: pointer;
   display: none;
+  padding: 0.3rem 0.5rem;
 }
-.menu-icon a {
-  visibility: hidden;
-}
-.menu-icon.active {
-  visibility: visible;
-}
-.menu-icon i {
-  display: block;
-  margin-right: 0;
-}
-/*BREAKPOINTS
-@media(max-width: 425px){
-  .header{
-    padding: 1rem 0 1rem 2rem;
-    left: 15%;
-    width: 185vw;
-  }
-  .logo{
-    font-size: 4rem;
-  }
-  .menu-icon{
-    display: block;
-    margin-left: 20rem;
-    font-size: 5rem;
 
+/* Tablet y móvil: menú hamburguesa */
+@media (max-width: 1024px) {
+  .menu-icon {
+    display: block;
   }
-  .navbar{
+
+  .navbar {
     position: absolute;
     top: 100%;
     left: 0;
-    width: 180%;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
     padding: 1rem 2%;
     background: var(--bg-color);
     border-top: .1rem solid var(--main-color);
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
     display: none;
   }
-  .navbar.active{
-    display: block;
-    width: 155vw;
 
+  .navbar.active {
+    display: flex;
   }
-.navbar a{
-  display: block;
-  font-size: 5rem;
-  margin: 1rem 2rem;
-}
-}
-@media(max-width: 768px){
-  .header{
-    padding: 1rem 0 1rem 2rem;
-    left: 1%;
-    width: 185vw;
-  }
-  .logo{
-    font-size: 3rem;
-  }
-  .menu-icon{
-    display: block;
-    margin-left: 20rem;
-    font-size: 5rem;
-  }
-  .navbar{
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 180%;
-    padding: 1rem 2%;
-    background: var(--bg-color);
-    border-top: .1rem solid var(--main-color);
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
-    display: none;
-  }
-  .navbar.active{
-    display: block;
-    width: 75vw;
 
-  }
-.navbar a{
-  display: block;
-  font-size: 2rem;
-  margin: 1rem 2rem;
-}
-}
-*/
-@media (max-width: 1024px){
-  .logo{
-    font-size: 3rem;
-  }
-  .menu-icon{
-    display: block;
-    font-size: 2.8rem;
-    position: fixed;
-    left: 95%;
-  }
-  .navbar{
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 180%;
-    padding: 1rem 2%;
-    background: var(--bg-color);
-    border-top: .1rem solid var(--main-color);
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
-    display: none;
-  }
-  .navbar.active{
-    display: block;
-    width: 100vw;
-  }
-.navbar a{
-  display: block;
-  font-size: 2rem;
-  margin: 1rem 2rem;
-}
-}
-@media (max-width: 768px){
-  .menu-icon{
-    left: 90%;
+  .navbar a {
+    font-size: 1.8rem;
+    padding: 0.8rem 1rem;
+    width: 100%;
   }
 }
-@media (max-width: 375px){
-  .logo{
+
+/* Tablet chica */
+@media (max-width: 768px) {
+  .logo {
+    font-size: 2rem;
+  }
+
+  .navbar a {
+    font-size: 1.6rem;
+  }
+}
+
+/* Móvil */
+@media (max-width: 425px) {
+  .logo {
+    font-size: 1.6rem;
+  }
+
+  .menu-icon {
     font-size: 1.8rem;
   }
-  .menu-icon{
-    font-size: 2rem;
-    left: 75%;
+
+  .navbar a {
+    font-size: 1.5rem;
+  }
+}
+
+/* Móvil pequeño */
+@media (max-width: 375px) {
+  .logo {
+    font-size: 1.4rem;
   }
 }

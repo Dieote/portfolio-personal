@@ -1,43 +1,51 @@
-.services-box h3{
+.services-box h3 {
   font-size: 2.0rem;
   font-weight: 700;
 }
-.heading{
-    text-align: center;
-    margin-top: 5%;
-    line-height: 0.8;
-    font-size: 2.5rem;
-    text-shadow: 2px 2px 2px black;
+
+.heading {
+  text-align: center;
+  padding-top: 6rem;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 2px black;
 }
+
 .services-container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: wrap;
-  gap: 3rem;
-  margin-bottom: 5%;
+  gap: 2rem;
+  padding: 0 2rem;
+  margin-bottom: 4%;
 }
-.services-container .services-box{
+
+.services-container .services-box {
   width: 25rem;
   background: var(--second-bg-color);
-  padding: 2rem 2rem 1rem 1rem;
+  padding: 2rem 2rem 1rem;
   border-radius: 2rem;
   text-align: center;
-  border: 2rem solid var(-bg-color);
+  border: 2rem solid var(--bg-color);
   transition: .5s ease;
 }
-.services-container .services-box:hover{
-border-color: var(--main-color);
-transform: scale(1.1);
+
+.services-container .services-box:hover {
+  border-color: var(--main-color);
+  transform: scale(1.05);
 }
+
 .services-box i {
   font-size: 5rem;
   color: var(--main-color);
 }
+
 .services-box p {
   font-size: 1.3rem;
   color: var(--text-color);
 }
+
 .description {
   text-align: center;
   color: var(--text-color);
@@ -47,7 +55,8 @@ transform: scale(1.1);
   font-size: 1.4rem;
   text-shadow: 2px 2px 2px black;
 }
-/* skills */
+
+/* Habilidades */
 .skill-content {
   margin: 3rem 0 4rem;
   text-align: center;
@@ -86,7 +95,7 @@ transform: scale(1.1);
   transform: scale(1.05);
 }
 
-/*Estilos Modal*/
+/* Modal */
 .overlay {
   position: fixed;
   top: 0;
@@ -99,14 +108,18 @@ transform: scale(1.1);
   align-items: center;
   z-index: 999;
 }
+
 .modal-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 5%;
+  height: auto;
+  padding: 1rem;
 }
+
 .img-box {
   max-width: 600px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -114,29 +127,31 @@ transform: scale(1.1);
 
 .img-box img {
   width: 100%;
-  max-width: 600px;
   height: auto;
   transition: .5s ease;
 }
+
 .img-box:hover img {
-  transform: scale(1.2);
-}
-.close-btn{
-  position: fixed;
-    top: 70px;
-    right: 320px;
-    z-index: 1;
-    background-color: transparent;
-    color: var(--main-color);
-    font-size: 1.5rem;
-    border: none;
+  transform: scale(1.05);
 }
 
-/*Grilla Resto*/
+.close-btn {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+  background-color: transparent;
+  color: var(--main-color);
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+/* Grilla restaurantes */
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  gap: 20px;
 }
 
 .grid-item {
@@ -146,125 +161,193 @@ transform: scale(1.1);
   border-radius: 25px 5px;
   transition: .5s ease;
 }
+
 .grid-item:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
-.grid-item h4{
+
+.grid-item h4 {
   font-size: 2.0rem;
   font-weight: 700;
   text-align: center;
   text-shadow: 2px 2px 2px black;
+}
 
-}
-.grid-item p{
+.grid-item p {
   font-size: 1.0rem;
-  font-weight: 40;
 }
-ul{
-padding-left: 20px;
+
+ul {
+  padding-left: 20px;
 }
+
 .grid-item li {
   font-size: 1.0rem;
   text-align: left;
   list-style: none;
   margin-bottom: .5rem;
 }
+
 .grid-item i {
   text-align: left;
   margin-right: 10px;
   margin-top: 5px;
   color: var(--main-color);
 }
+
 #links-work {
   display: flex;
   margin-left: 50px;
   margin-top: 10px;
 }
 
-.instagram-icon{
+.instagram-icon {
   font-size: 1.4rem;
   transition: .3s ease;
 }
-.instagram-icon:hover{
-    box-shadow: 0 0 1rem var(--main-color);
+
+.instagram-icon:hover {
+  box-shadow: 0 0 1rem var(--main-color);
 }
 
-.external-icon{
+.external-icon {
   font-size: 1.3rem;
   transition: .3s ease;
 }
-.external-icon:hover{
-    box-shadow: 0 0 1rem var(--main-color);
+
+.external-icon:hover {
+  box-shadow: 0 0 1rem var(--main-color);
 }
-.star-icon{
+
+.star-icon {
   font-size: 1.4rem;
   transition: .3s ease;
 }
-.star-icon:hover{
-    box-shadow: 0 0 1rem var(--main-color);
+
+.star-icon:hover {
+  box-shadow: 0 0 1rem var(--main-color);
 }
-/*Responsive
-@media (max-width: 991px){
-  .services-container{
-    margin-top: 3rem;
-    margin-left: 5rem;
-    width: 100%;
-  }
+
+/* Laptop */
+@media (max-width: 1024px) {
   .heading {
-    margin-top: 10rem;
+    padding-top: 7rem;
+  }
+
+  .services-container {
+    padding: 0 1.5rem;
   }
 }
 
-*/
-@media(max-width: 1024px){
-  .heading{
-    margin-top: 5rem;
+/* Tablet */
+@media (max-width: 768px) {
+  .services-container .services-box {
+    width: 28rem;
+  }
+
+  .services-box h3 {
+    font-size: 2.2rem;
+  }
+
+  .services-box p {
+    font-size: 1.7rem;
+  }
+
+  .description {
+    font-size: 1.5rem;
   }
 }
-@media(max-width: 768px){
-  .services-container .services-box{
-  width: 31rem;
-  height: 35rem;
- }
- .services-box h3{
-  font-size: 2.5rem;
-}
-.services-box p{
-  font-size: 1.9rem;
-}
-.description{
-  font-size: 1.6rem;
-}
-}
-@media (max-width: 425px){
-  .skills h4 {
-    font-size: 1.8rem;
+
+/* Móvil grande */
+@media (max-width: 425px) {
+  .heading {
+    padding-top: 6.5rem;
+    font-size: 2.2rem;
   }
-  .services-container{
-    margin-left: 10%;
+
+  .services-container {
+    padding: 0 1rem;
+    gap: 1.5rem;
   }
-  .services-container .services-box{
-    width: 35rem;
-    height: 62rem;
+
+  .services-container .services-box {
+    width: 100%;
   }
-  .services-box h3{
-    font-size: 3rem;
-  }
-  .services-box p{
-    font-size: 2.3rem;
-  }
-  .services-box .btn{
-    font-size: 2.5rem;
-  }
-  .services-box .description{
+
+  .services-box h3 {
     font-size: 2rem;
   }
-}
-@media (max-width: 425px){
-  .services-container .services-box{
-    height: 68rem;
+
+  .services-box p {
+    font-size: 1.6rem;
   }
-  .services-container{
-    margin-left: 1%;
+
+  .services-box .btn {
+    font-size: 1.8rem;
+  }
+
+  .services-box .description {
+    font-size: 1.4rem;
+  }
+
+  .skills h4 {
+    font-size: 1.5rem;
+  }
+
+  /* Grilla restaurantes: una columna */
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .img-box {
+    max-width: 90vw;
+  }
+}
+
+/* Móvil mediano */
+@media (max-width: 375px) {
+  .heading {
+    font-size: 2rem;
+    padding-top: 6rem;
+  }
+
+  .services-container {
+    padding: 0 0.8rem;
+  }
+
+  .services-box h3 {
+    font-size: 1.8rem;
+  }
+
+  .services-box p {
+    font-size: 1.4rem;
+  }
+
+  .description {
+    font-size: 1.2rem;
+  }
+
+  .skill-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .skills h4 {
+    font-size: 1.3rem;
+  }
+}
+
+/* Móvil pequeño */
+@media (max-width: 320px) {
+  .heading {
+    font-size: 1.8rem;
+    padding-top: 5.5rem;
+  }
+
+  .services-container {
+    padding: 0 0.5rem;
+  }
+
+  .services-box h3 {
+    font-size: 1.6rem;
   }
 }

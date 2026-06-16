@@ -1,13 +1,15 @@
-.home{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 5rem 2rem;
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5rem 2rem;
 }
-.home-content{
+
+.home-content {
   width: 45%;
 }
-.home-content h3{
+
+.home-content h3 {
   font-size: 2.0rem;
   font-weight: 700;
 }
@@ -17,17 +19,28 @@
   font-weight: 600;
   line-height: 1.3;
 }
+
 .home-content p {
   font-size: 1.4rem;
 }
-.home-cv{
+
+.home-cv {
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+/* Iconos sociales en fila */
+.social-media {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
 .social-media a {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 4rem;
@@ -37,181 +50,271 @@
   border-radius: 50%;
   font-size: 2rem;
   color: var(--main-color);
-  margin: 4rem 4.5rem 3rem;
+  transition: .3s ease;
 }
-.social-media a:hover{
+
+.social-media a:hover {
   background: var(--main-color);
   color: var(--second-bg-color);
-  box-shadow: 0 0 1 var(--main-color);
+  box-shadow: 0 0 1rem var(--main-color);
 }
-/* maquina escribir */
-  #writer {
-    display: block;
-    font-family: monospace;
-    white-space: nowrap;
-    border-right: 4px solid;
-    width: 32ch;
-    color: var(--main-color);
 
-    animation: typing 2s steps(32), blink .5s infinite step-end alternate;
-    overflow:hidden;
-    }
+/* Texto animado */
+#writer {
+  display: block;
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 32ch;
+  color: var(--main-color);
+  animation: typing 2s steps(32), blink .5s infinite step-end alternate;
+  overflow: hidden;
+}
 
-    @keyframes typing {
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
 
-    from { width: 0}
-    }
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
 
-    @keyframes blink {
-     50% { border-color: transparent}
-    }
+/* Botón CV neón */
+.btn-neon {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  color: #fff;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 24px;
+  overflow: hidden;
+  transition: 0.2s;
+}
 
-    .btn-neon{
-      position: relative;
-      display: inline-block;
-      padding: 15px 30px;
-      color: #fff;
-      letter-spacing: 4px;
-      text-decoration: none;
-      font-size: 24px;
-      overflow: hidden;
-      transition: 0.2s;
-  }
-  .btn-neon:hover{
-      background: #a945c7;
-      box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
-      transition-delay: 1s;
-   }
-  .btn-neon span{
-      position: absolute;
-      display: block;
-  }
-  #span1{
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 2px;
-      background: linear-gradient(90deg, transparent,#a945c7);
-   }
-   .btn-neon:hover #span1{
-      left: 100%;
-      transition: 1s;
-  }
-   #span3{
-      bottom: 0;
-      right: -100%;
-      width: 100%;
-      height: 2px;
-      background: linear-gradient(270deg, transparent,#a945c7);
-  }
-   .btn-neon:hover #span3{
-      right: 100%;
-      transition: 1s;
-      transition-delay: 0.5s;
-  }
-  #span2{
-      top: -100%;
-      right: 0;
-      width: 2px;
-      height: 100%;
-      background: linear-gradient(180deg,transparent,#a945c7);
-  }
-  .btn-neon:hover #span2{
-      top: 100%;
-      transition: 1s;
-      transition-delay: 0.25s;
-  }
-  #span4{
-      bottom: -100%;
-      left: 0;
-      width: 2px;
-      height: 100%;
-      background: linear-gradient(360deg,transparent,#a945c7);
-  }
-  .btn-neon:hover #span4{
-      bottom: 100%;
-      transition: 1s;
-      transition-delay: 0.75s;
-  }
+.btn-neon:hover {
+  background: #a945c7;
+  box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+  transition-delay: 1s;
+}
 
+.btn-neon span {
+  position: absolute;
+  display: block;
+}
 
-/*Responsive*/
-@media (max-width: 1024px){
+#span1 {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #a945c7);
+}
+
+.btn-neon:hover #span1 {
+  left: 100%;
+  transition: 1s;
+}
+
+#span3 {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #a945c7);
+}
+
+.btn-neon:hover #span3 {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+
+#span2 {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #a945c7);
+}
+
+.btn-neon:hover #span2 {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+
+#span4 {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #a945c7);
+}
+
+.btn-neon:hover #span4 {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}
+
+/* Laptop */
+@media (max-width: 1024px) {
   .home {
     flex-direction: column;
     align-items: center;
+    margin: 6rem 2rem 3rem;
+  }
 
+  .home-content {
+    width: 80%;
+    margin-bottom: 3rem;
   }
-  .home-content{
-    width: 66%;
-    margin-bottom: 5%;
-  }
+
   .home-cv {
     width: 100%;
     justify-content: center;
   }
-  .home-content h1{
-    font-size: 4.2rem;
+
+  .home-content h1 {
+    font-size: 3.2rem;
   }
-  .home-content h3{
-    font-size: 2.5rem;
+
+  .home-content h3 {
+    font-size: 1.8rem;
   }
-  .home-content p{
-    font-size: 2.5rem;
+
+  .home-content p {
+    font-size: 1.4rem;
   }
-  .social-media{
-    margin-bottom: 2.5rem;
-  }
-  .social-media a{
-    margin-left: 2.5rem;
-    width: 8vw;
-    height: 5rem;
-    font-size: 5rem;
-  }
-  .social-media i{
-    font-size: 3.5rem;
+
+  .social-media a {
+    width: 4.5rem;
+    height: 4.5rem;
+    font-size: 2.2rem;
   }
 }
 
-@media (max-width: 768px){
-  .home-content{
-    width: 90%;
+/* Tablet */
+@media (max-width: 768px) {
+  .home-content {
+    width: 88%;
   }
-  .social-media a{
-    margin-left: 2.5rem;
-    width: 10vw;
-    height: 5rem;
-  }
-  .social-media i{
+
+  .home-content h1 {
     font-size: 2.8rem;
   }
+
+  .home-content h3 {
+    font-size: 1.7rem;
+  }
+
+  .home-content p {
+    font-size: 1.3rem;
+  }
+
   .home-cv {
-    width: 85%;
+    width: 80%;
+  }
+
+  .btn-neon {
+    font-size: 20px;
+    padding: 12px 24px;
   }
 }
-@media (max-width: 425px){
-  .home-content{
-    width: 85%;
+
+/* Móvil grande */
+@media (max-width: 425px) {
+  .home {
+    margin: 5rem 1rem 3rem;
   }
-  #writer{
+
+  .home-content {
+    width: 95%;
+  }
+
+  #writer {
     white-space: normal;
-    max-width: 115%;
+    max-width: 100%;
     animation: none;
     border-right: none;
   }
-  .social-media a{
-    width: 18vw;
+
+  .home-content h1 {
+    font-size: 2.4rem;
   }
-  .home-cv{
-    width: 100%;
+
+  .home-content h3 {
+    font-size: 1.5rem;
   }
-}
-@media (max-width: 375px){
-  .home{
-    margin: 0 0;
+
+  .home-content p {
+    font-size: 1.2rem;
   }
+
   .home-cv {
     width: 100%;
-    margin-bottom: 20%;
+  }
+
+  .btn-neon {
+    font-size: 18px;
+    padding: 12px 20px;
+    letter-spacing: 2px;
+  }
+
+  .social-media a {
+    width: 3.8rem;
+    height: 3.8rem;
+    font-size: 1.9rem;
+  }
+}
+
+/* Móvil mediano */
+@media (max-width: 375px) {
+  .home {
+    margin: 5rem 0.8rem 2rem;
+  }
+
+  .home-content {
+    width: 100%;
+  }
+
+  .home-content h1 {
+    font-size: 2rem;
+  }
+
+  .home-content h3 {
+    font-size: 1.4rem;
+  }
+
+  .home-cv {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
+/* Móvil pequeño */
+@media (max-width: 320px) {
+  .home-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .home-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .btn-neon {
+    font-size: 16px;
+    padding: 10px 16px;
+  }
+
+  .social-media a {
+    width: 3.4rem;
+    height: 3.4rem;
+    font-size: 1.7rem;
   }
 }

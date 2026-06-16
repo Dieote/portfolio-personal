@@ -44,6 +44,3 @@
  .btn:hover {
    box-shadow: none;
  }
-
- /* RESPONSIVE*/
- @media (max-width: 375px) {}

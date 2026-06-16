@@ -1,5 +1,5 @@
 .experience {
-  padding: 4rem 2rem 5rem;
+  padding: 6rem 2rem 5rem;
 }
 
 .heading {
@@ -132,41 +132,126 @@
   font-style: italic;
 }
 
-@media (max-width: 768px) {
+/* Laptop */
+@media (max-width: 1024px) {
+  .experience {
+    padding: 7rem 2rem 4rem;
+  }
+
   .heading {
-    font-size: 3.5rem;
-  }
-  .timeline-content h3 {
-    font-size: 2.2rem;
-  }
-  .timeline-content h4 {
-    font-size: 1.8rem;
-  }
-  .timeline-content p {
-    font-size: 1.7rem;
-  }
-  .tags span {
-    font-size: 1.5rem;
+    font-size: 2.8rem;
   }
 }
 
+/* Tablet */
+@media (max-width: 768px) {
+  .experience {
+    padding: 7rem 1.5rem 4rem;
+  }
+
+  .heading {
+    font-size: 2.6rem;
+  }
+
+  .timeline-content h3 {
+    font-size: 1.8rem;
+  }
+
+  .timeline-content h4 {
+    font-size: 1.4rem;
+  }
+
+  .timeline-content p {
+    font-size: 1.3rem;
+  }
+
+  .tags span {
+    font-size: 1.2rem;
+  }
+}
+
+/* Móvil grande */
 @media (max-width: 425px) {
   .experience {
-    padding: 8rem 1.5rem 4rem;
+    padding: 7rem 1rem 3rem;
   }
+
   .heading {
-    font-size: 3rem;
+    font-size: 2.4rem;
   }
+
+  .timeline-content {
+    padding: 1.4rem 1.2rem;
+  }
+
   .timeline-content h3 {
-    font-size: 2.5rem;
+    font-size: 1.7rem;
   }
+
   .timeline-content h4 {
+    font-size: 1.3rem;
+  }
+
+  .timeline-content p {
+    font-size: 1.2rem;
+  }
+
+  .tags span {
+    font-size: 1.1rem;
+    padding: 0.2rem 0.8rem;
+  }
+
+  .timeline-link p {
+    font-size: 1rem;
+  }
+}
+
+/* Móvil mediano */
+@media (max-width: 375px) {
+  .experience {
+    padding: 6.5rem 0.8rem 3rem;
+  }
+
+  .heading {
+    font-size: 2.2rem;
+  }
+
+  .timeline {
+    padding-left: 1.5rem;
+  }
+
+  .timeline-item {
+    padding-left: 1.8rem;
+  }
+
+  .timeline-content h3 {
+    font-size: 1.6rem;
+  }
+
+  .timeline-content h4 {
+    font-size: 1.2rem;
+  }
+
+  .timeline-content p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Móvil pequeño */
+@media (max-width: 320px) {
+  .experience {
+    padding: 6rem 0.5rem 2rem;
+  }
+
+  .heading {
     font-size: 2rem;
   }
-  .timeline-content p {
-    font-size: 1.9rem;
+
+  .timeline-content {
+    padding: 1rem 0.8rem;
   }
-  .tags span {
-    font-size: 1.7rem;
+
+  .timeline-content h3 {
+    font-size: 1.5rem;
   }
 }
