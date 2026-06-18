@@ -50,6 +50,22 @@ span {
   cursor: pointer;
 }
 
+.contact form .btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.estado-mensaje {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: var(--main-color);
+}
+
+.estado-mensaje.error {
+  color: #e74c3c;
+}
+
 /* Laptop */
 @media (max-width: 1024px) {
   .heading {

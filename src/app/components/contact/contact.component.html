@@ -1,14 +1,51 @@
 <div class="contact" id="contact">
   <h2 class="heading">Comunic<span>á</span>te</h2>
 
-  <form action="#">
+  <form (ngSubmit)="enviarMensaje()" #contactForm="ngForm">
     <div class="input-box">
-      <input type="text" placeholder="Nombre Completo" />
-      <input type="email" placeholder="Direccion de email" />
-      <input type="text" placeholder="Asunto" />
+      <input
+        type="text"
+        placeholder="Nombre"
+        name="nombre"
+        [(ngModel)]="formData.nombre"
+        required
+      />
+      <input
+        type="email"
+        placeholder="Correo"
+        name="correo"
+        [(ngModel)]="formData.correo"
+        required
+      />
+      <input
+        type="text"
+        placeholder="Asunto"
+        name="asunto"
+        [(ngModel)]="formData.asunto"
+        required
+      />
     </div>
-    <textarea name="" id="" cols="30" rows="10"></textarea>
+
+    <textarea
+      placeholder="Mensaje"
+      name="mensaje"
+      [(ngModel)]="formData.mensaje"
+      cols="30"
+      rows="10"
+      required
+    ></textarea>
+
     <br />
-    <input type="submit" value="Enviar mensaje" class="btn" />
+
+    <p *ngIf="estadoMensaje" class="estado-mensaje" [class.error]="esError">
+      {{ estadoMensaje }}
+    </p>
+
+    <input
+      type="submit"
+      [value]="enviando ? 'Enviando...' : 'Enviar mensaje'"
+      [disabled]="enviando || contactForm.invalid"
+      class="btn"
+    />
   </form>
 </div>
